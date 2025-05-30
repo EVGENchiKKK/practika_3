@@ -212,3 +212,206 @@ hr.foot {
     background-color: grey;
     height: 2px;
 }
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+  #spisProd, .resultSearch, .wrapperSearc {
+    width: 800px;
+  }
+  
+  .oneProd {
+    width: 800px;
+  }
+
+  .oneProd {
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  .imgOneProd {
+    width: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  #spisProd, .resultSearch, .wrapperSearc {
+    width: 700px;
+  }
+  
+  .oneProd {
+    width: 700px;
+    flex-direction: column;
+  }
+  
+  .imgOneProd {
+    width: 100%;
+  }
+  
+  .textOneProd {
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .oneProd {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .imgOneProd {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  
+  .textOneProd {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .textOneProd hr {
+    margin: 15px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #spisProd, .resultSearch, .wrapperSearc {
+    width: 90%;
+    gap: 20px;
+  }
+  
+  .itemProd, .itemProd a {
+    width: 180px;
+    height: 270px;
+  }
+  
+  header nav {
+    height: 80px;
+    justify-content: center;
+  }
+  
+  .inpSearch {
+    width: 100%;
+  }
+  
+  .mainPage h2 {
+    font-size: 20px;
+  }
+
+  .oneProd {
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 15px;
+  }
+  
+  .imgOneProd {
+    max-width: 400px;
+  }
+  
+  .textOneProd h2 {
+    font-size: 22px;
+  }
+  
+  .textOneProd p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  #spisProd, .resultSearch {
+    justify-content: center;
+  }
+  
+  .itemProd, .itemProd a {
+    width: 150px;
+    height: 240px;
+  }
+  
+  header a {
+    font-size: 16px;
+  }
+  
+  .textItemProd button {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .textItemProd button img {
+    width: 15px;
+  }
+  
+  .textProd p {
+    font-size: 13px;
+  }
+  
+  footer {
+    height: 80px;
+    font-size: 10px;
+  }
+  
+  hr.foot {
+    width: 120px;
+  }
+
+  .oneProd {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .imgOneProd {
+    max-width: 100%;
+  }
+  
+  .textOneProd h2 {
+    font-size: 20px;
+  }
+  
+  .textOneProd p {
+    font-size: 13px;
+  }
+  
+  .textOneProd {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .itemProd, .itemProd a {
+    width: 130px;
+    height: 220px;
+  }
+  
+  .imgProd {
+    height: 60%;
+  }
+  
+  header nav {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .btnSearch {
+    width: 30px;
+    height: 30px;
+  }
+
+  .oneProd {
+    border-radius: 10px;
+  }
+  
+  .imgOneProd img {
+    border-radius: 10px;
+  }
+  
+  .textOneProd h2 {
+    font-size: 18px;
+  }
+  
+  .textOneProd p {
+    font-size: 12px;
+  }
+}
