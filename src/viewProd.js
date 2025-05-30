@@ -11,7 +11,10 @@ fetch(adressProd)
                     <a href="product.html?id=${product.id}">
                         <div class="imgProd">
                             <img src="${product.thumbnail}" alt="${product.title}"/>
-                            <button class="btnComment">${product.reviews.length} коментариев</button>
+                            <div class="coment">
+                                <button class="btnComment">${product.reviews.length}</button>
+                                <p>коментариев</p>
+                            </div>
                         </div>
                         <div class="textItemProd">
                             <div class="textProd">

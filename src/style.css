@@ -38,7 +38,7 @@ header a {
     font-size: 20px;
 }
 
-.mainPage {
+.mainPage, main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,7 @@ header a {
     font-size: 25px;
 }
 
-#spisProd, .resultSearch {
+#spisProd, .resultSearch, #commentResult {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -72,6 +72,7 @@ header a {
     font-size: 12px;
     color: black;
     border-radius: 20px;
+    position: relative;
 }
 
 .imgProd {
@@ -416,8 +417,60 @@ hr.foot {
   }
 }
 
-.btnComment {
+.coment {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
   border-radius: 20px;
   font-size: 10px;
+  background: #6c7f73;
+  color: #fff;
+  width: 100px;
+  height: 20px;
+}
+
+.btnComment {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.itemCommentProd a {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    border: 1px solid black;
+    width: 220px;
+    height: 200px;
+    padding: 10px;
+    font-size: 10px;
+    text-decoration-color: none;
+    text-decoration: none;
+    color: #000;
+    border-radius: 20px;
+}
+
+.textProd {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.textProd h3 {
+    font-size: 15px;
+}
+
+.textProd h4 {
+  font-size: 10px;
+}
+
+.textProd p {
+  font-size: 13px;
 }

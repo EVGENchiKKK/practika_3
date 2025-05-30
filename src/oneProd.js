@@ -26,6 +26,7 @@ fetch(`https://dummyjson.com/products/${productId}`)
                     <hr/>
                     <h3>Описание</h3>
                     <p>${product.description}</p>
+                    <h3>Коментарии</h3>
                 </div>
             </div>
         `

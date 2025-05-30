@@ -30,6 +30,12 @@ function main(request, response) {
             response.write(data);
             response.end();
         })
+    } else if (pathname === '/commentPage.html') {
+        fs.readFile('./public/commentPage.html', function(err, data) {
+            response.writeHead(200, {'content-type': 'text/html; charset=utf-8'});
+            response.write(data);
+            response.end();
+        })
     } else if (request.url === '/oneProd.js') {
         fs.readFile('./src/oneProd.js', function(err, data) {
             response.writeHead(200, {'content-type': 'text/javascript'});
@@ -38,6 +44,12 @@ function main(request, response) {
         })
     } else if (request.url === '/search.js') {
         fs.readFile('./src/search.js', function(err, data) {
+            response.writeHead(200, {'content-type': 'text/javascript'});
+            response.write(data);
+            response.end();
+        })
+    } else if (request.url === '/comentProd.js') {
+        fs.readFile('./src/comentProd.js', function(err, data) {
             response.writeHead(200, {'content-type': 'text/javascript'});
             response.write(data);
             response.end();
